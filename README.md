@@ -30,3 +30,12 @@
 4. Run 버튼으로 앱을 실행합니다.
 
 실제 플래시 동작은 후면 플래시가 있는 실기기에서 확인하는 것을 권장합니다.
+
+## 릴리스 빌드
+
+```bash
+./gradlew :app:bundleRelease
+```
+
+Play Console에 업로드할 App Bundle은 `app/build/outputs/bundle/release/app-release.aab`에 생성됩니다.
+R8 가독화 파일은 `app/build/outputs/mapping/release/mapping.txt`에 생성되며, Play Console의 ReTrace 매핑 파일로 함께 업로드합니다.
