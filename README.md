@@ -39,3 +39,4 @@
 
 Play Console에 업로드할 App Bundle은 `app/build/outputs/bundle/release/app-release.aab`에 생성됩니다.
 R8 가독화 파일은 `app/build/outputs/mapping/release/mapping.txt`에 생성되며, Play Console의 ReTrace 매핑 파일로 함께 업로드합니다.
+Compose가 끌고 오는 선택적 AndroidX path 네이티브 라이브러리는 앱 기능에 사용하지 않아 릴리스 번들에서 제외합니다.

@@ -35,6 +35,11 @@ android {
     buildFeatures {
         compose = true
     }
+    packaging {
+        jniLibs {
+            excludes += "**/libandroidx.graphics.path.so"
+        }
+    }
 }
 
 dependencies {
